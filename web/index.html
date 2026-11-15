@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es-DO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tierra Firme Volteos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Transporte de arena, grava, caliche, relleno y bote de escombros con camiones volteo de 19 m³ en República Dominicana. Cotiza por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: asphalt header band + hero with live load calculator, then concrete-grey sections; one hazard-stripe divider marks the jump from pitch to proof. */
+:root{
+  --concreto:#ECEEEA;     /* page ground: cool poured-concrete grey */
+  --losa:#F8F9F6;         /* raised surfaces */
+  --asfalto:#1B1E1C;      /* ink + dark bands */
+  --gris:#5B615C;         /* secondary text */
+  --linea:#D3D7D0;        /* rules */
+  --volteo:#F2B705;       /* dump-truck body yellow, used in blocks */
+  --volteo-ink:#1B1E1C;   /* text on yellow */
+  --caliche:#9A6A35;      /* earth accent for small labels */
+  --banda:#1B1E1C;        /* dark band bg */
+  --banda-fg:#F1F2EE;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --concreto:#151816;--losa:#1E2220;--asfalto:#EDEFEA;--gris:#A3AAA4;--linea:#313732;
+  --volteo:#F5BE1E;--volteo-ink:#151816;--caliche:#D39A5C;--banda:#0D0F0E;--banda-fg:#EDEFEA;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --concreto:#151816;--losa:#1E2220;--asfalto:#EDEFEA;--gris:#A3AAA4;--linea:#313732;
+  --volteo:#F5BE1E;--volteo-ink:#151816;--caliche:#D39A5C;--banda:#0D0F0E;--banda-fg:#EDEFEA;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--concreto);color:var(--asfalto);font:16px/1.6 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--banda)}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:850;font-stretch:78%;letter-spacing:-.01em;text-transform:uppercase}
+h3{font-size:1.15rem;font-weight:750;font-stretch:90%}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font:600 .75rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--caliche)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+:focus-visible{outline:3px solid var(--volteo);outline-offset:2px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--banda);color:var(--banda-fg)}
+header .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
+.marca svg{flex:none}
+.marca b{font:900 1.25rem/1 var(--display);font-stretch:72%;text-transform:uppercase;letter-spacing:.01em}
+.marca small{display:block;font:500 .66rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+nav{display:flex;gap:18px;margin-left:auto;font-weight:500;font-size:.93rem}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:var(--r);padding:12px 18px;font:700 .95rem/1 var(--body);text-decoration:none;cursor:pointer}
+.btn-y{background:var(--volteo);color:var(--volteo-ink)}
+.btn-y:hover{filter:brightness(1.06)}
+.btn-o{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+@media (max-width:820px){nav{display:none}header .btn{margin-left:auto;padding:10px 14px}}
+
+/* hero */
+.hero{background:var(--banda);color:var(--banda-fg);padding-block:48px 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:900;font-stretch:66%;text-transform:uppercase;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--volteo)}
+.hero .lead{margin-top:18px;max-width:52ch;font-size:1.1rem;opacity:.88}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .eyebrow{color:var(--volteo);margin-bottom:16px;display:block}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:36px}}
+
+/* calculator */
+.calc{background:var(--losa);color:var(--asfalto);border-radius:10px;padding:24px;min-width:0}
+.calc h3{font-size:1.3rem;text-transform:uppercase;font-stretch:80%;font-weight:850}
+.calc .sub{color:var(--gris);font-size:.88rem;margin-top:4px}
+.tabs{display:flex;gap:4px;margin-top:16px;background:var(--concreto);padding:4px;border-radius:var(--r)}
+.tabs button{flex:1;border:0;background:transparent;color:var(--gris);padding:8px;border-radius:4px;font:600 .85rem var(--body);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--losa);color:var(--asfalto);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.campos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.campos.uno{grid-template-columns:1fr}
+label{display:flex;flex-direction:column;gap:4px;font-size:.78rem;font-weight:600;color:var(--gris)}
+input,select,textarea{font:500 1rem var(--body);color:var(--asfalto);background:var(--concreto);border:1px solid var(--linea);border-radius:var(--r);padding:10px;width:100%;min-width:0}
+input{font-family:var(--mono)}
+.mat{margin-top:12px}
+.resultado{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--linea);border-radius:var(--r);overflow:hidden}
+.resultado div{background:var(--concreto);padding:12px 14px}
+.resultado span{display:block;font-size:.72rem;color:var(--gris);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.resultado strong{font:600 1.6rem/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.resultado .big{grid-column:1/-1;background:var(--volteo);color:var(--volteo-ink)}
+.resultado .big span{color:var(--volteo-ink);opacity:.75}
+.resultado .big strong{font-size:2.4rem}
+.nota{font-size:.78rem;color:var(--gris);margin-top:10px}
+.calc .btn{width:100%;justify-content:center;margin-top:14px}
+
+/* spec strip */
+.franja{border-bottom:1px solid var(--linea);background:var(--losa)}
+.franja .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.franja div{padding-block:20px;padding-inline:16px;border-left:1px solid var(--linea)}
+.franja div:first-child{border-left:0;padding-left:0}
+.franja b{display:block;font:600 1.5rem/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.franja span{font-size:.86rem;color:var(--gris)}
+@media (max-width:760px){.franja .wrap{grid-template-columns:1fr 1fr}.franja div:nth-child(3){border-left:0;padding-left:0}.franja div{border-top:1px solid var(--linea)}.franja div:nth-child(-n+2){border-top:0}}
+
+section{padding-block:72px}
+.cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:32px}
+.cab p{max-width:46ch;color:var(--gris)}
+
+/* services */
+.servicios{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea);border-radius:10px;overflow:hidden}
+.serv{background:var(--losa);padding:24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.serv .tag{font:600 .7rem/1 var(--mono);letter-spacing:.08em;color:var(--caliche);text-transform:uppercase}
+.serv p{color:var(--gris);font-size:.95rem}
+@media (max-width:900px){.servicios{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.servicios{grid-template-columns:1fr}}
+
+.peligro{height:14px;background:repeating-linear-gradient(-45deg,var(--volteo) 0 18px,var(--asfalto) 18px 36px)}
+
+/* process */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:p}
+.paso{border-top:4px solid var(--asfalto);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.paso::before{counter-increment:p;content:"Paso " counter(p);font:600 .75rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--caliche)}
+.paso p{color:var(--gris);font-size:.95rem}
+@media (max-width:860px){.pasos{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.pasos{grid-template-columns:1fr}}
+
+/* fleet */
+.flota{background:var(--banda);color:var(--banda-fg)}
+.flota .eyebrow{color:var(--volteo)}
+.flota .cab p{color:inherit;opacity:.75}
+.flota-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.camion{border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:24px;min-width:0}
+.camion svg{width:100%;height:auto;max-width:100%;display:block;margin-bottom:16px}
+.ficha{width:100%;border-collapse:collapse;font-size:.92rem}
+.ficha td{padding:8px 0;border-top:1px solid rgba(255,255,255,.12)}
+.ficha td:last-child{text-align:right;font-family:var(--mono)}
+@media (max-width:760px){.flota-grid{grid-template-columns:1fr}}
+
+/* clients */
+.clientes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cli{background:var(--losa);border:1px solid var(--linea);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.cli p{color:var(--gris);font-size:.92rem}
+@media (max-width:900px){.clientes{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.clientes{grid-template-columns:1fr}}
+
+.zonas{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.zonas span{border:1px solid var(--linea);background:var(--losa);border-radius:999px;padding:6px 14px;font-size:.9rem}
+
+/* contact */
+.contacto .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.datos{display:flex;flex-direction:column;gap:18px;margin-top:24px}
+.datos div span{display:block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gris)}
+.datos div b{font:600 1.2rem var(--mono);user-select:all}
+form{background:var(--losa);border:1px solid var(--linea);border-radius:10px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:14px;min-width:0}
+form .full{grid-column:1/-1}
+textarea{min-height:96px;resize:vertical;font-family:var(--body)}
+@media (max-width:820px){.contacto .wrap{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+footer{background:var(--banda);color:var(--banda-fg);padding-block:28px;font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;opacity:.8}
+
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Tierra Firme, inicio">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" style="fill:var(--volteo)"/><path d="M7 25 L11 14 H27 L31 25 Z" style="fill:var(--volteo-ink)"/><rect x="7" y="25" width="26" height="3" style="fill:var(--volteo-ink)"/><circle cx="13" cy="31" r="3" style="fill:var(--volteo-ink)"/><circle cx="27" cy="31" r="3" style="fill:var(--volteo-ink)"/></svg>
+      <span><b>Tierra Firme</b><small>Volteos · Movimiento de tierras</small></span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#flota">Flota</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-y" href="https://wa.me/18090000000?text=Hola%2C%20quiero%20cotizar%20un%20viaje%20de%20volteo." target="_blank" rel="noopener">Cotizar</a>
+  </div>
+</header>
+
+<div class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Transporte de materiales · República Dominicana</span>
+      <h1>Material en tu obra, <em>a la hora acordada.</em></h1>
+      <p class="lead">Llevamos arena, grava, caliche y relleno, y sacamos tus escombros, con dos camiones volteo de 19&nbsp;m³. Cotizas por WhatsApp, confirmas y te despachamos el mismo día o al siguiente.</p>
+      <div class="ctas">
+        <a class="btn btn-y" href="https://wa.me/18090000000?text=Hola%2C%20quiero%20cotizar%20un%20viaje%20de%20volteo." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn btn-o" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="calc" aria-labelledby="calc-t">
+      <h3 id="calc-t">¿Cuántos viajes necesitas?</h3>
+      <p class="sub">Calcula con las medidas de tu solar o con los metros cúbicos que te dio el ingeniero.</p>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" id="t-medidas" aria-selected="true">Por medidas</button>
+        <button type="button" role="tab" id="t-m3" aria-selected="false">Ya sé los m³</button>
+      </div>
+      <div class="campos" id="g-medidas">
+        <label for="largo">Largo (m)<input id="largo" type="number" inputmode="decimal" min="0" step="0.1" value="20"></label>
+        <label for="ancho">Ancho (m)<input id="ancho" type="number" inputmode="decimal" min="0" step="0.1" value="10"></label>
+        <label for="alto">Espesor (m)<input id="alto" type="number" inputmode="decimal" min="0" step="0.05" value="0.6"></label>
+      </div>
+      <div class="campos uno" id="g-m3" hidden>
+        <label for="m3">Volumen en sitio (m³)<input id="m3" type="number" inputmode="decimal" min="0" step="1" value="120"></label>
+      </div>
+      <label class="mat" for="material">Material
+        <select id="material">
+          <option value="1.30" data-n="Relleno compactado (tierra o caliche)">Relleno compactado (tierra o caliche)</option>
+          <option value="1.00" data-n="Arena o grava">Arena, grava o gravilla</option>
+          <option value="1.45" data-n="Bote de escombros">Bote de escombros (medido en sitio)</option>
+          <option value="1.25" data-n="Excavación / bote de tierra">Bote de tierra de excavación</option>
+        </select>
+      </label>
+      <div class="resultado" aria-live="polite">
+        <div class="big"><span>Viajes de 19 m³</span><strong id="r-viajes">–</strong></div>
+        <div><span>Material suelto</span><strong id="r-suelto">–</strong></div>
+        <div><span>Rondas (2 camiones)</span><strong id="r-rondas">–</strong></div>
+      </div>
+      <p class="nota" id="r-nota">Incluye el esponjamiento del material. Es un estimado: confirmamos en la visita o por fotos.</p>
+      <a class="btn btn-y" id="calc-wa" href="#" target="_blank" rel="noopener">Pedir precio de estos viajes</a>
+    </div>
+  </div>
+</div>
+
+<div class="franja">
+  <div class="wrap">
+    <div><b class="num">19 m³</b><span>por viaje, por camión</span></div>
+    <div><b class="num">38 m³</b><span>por ronda con los dos camiones</span></div>
+    <div><b class="num">6:00 a.m.</b><span>primer despacho, lunes a sábado</span></div>
+    <div><b>NCF</b><span>factura con comprobante fiscal</span></div>
+  </div>
+</div>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="cab">
+      <div><span class="eyebrow">Servicios</span><h2>Lo que movemos</h2></div>
+      <p>Compramos el material en minas y graveras de confianza o lo recogemos donde tú digas. Tú solo indicas dónde descargar.</p>
+    </div>
+    <div class="servicios">
+      <article class="serv"><span class="tag">Agregados</span><h3>Arena y grava</h3><p>Arena lavada, arena de mina, grava, gravilla y polvo de piedra para hormigón, bloques y pañete.</p></article>
+      <article class="serv"><span class="tag">Base y relleno</span><h3>Caliche y material de relleno</h3><p>Para nivelar solares, subir pisos, hacer terraplenes y base de caminos y parqueos.</p></article>
+      <article class="serv"><span class="tag">Limpieza de obra</span><h3>Bote de escombros</h3><p>Sacamos escombros de demolición y remodelación y los llevamos a un vertedero autorizado.</p></article>
+      <article class="serv"><span class="tag">Excavación</span><h3>Bote de tierra</h3><p>Retiramos la tierra de zapatas, cisternas, sótanos y cortes de terreno mientras la retro trabaja.</p></article>
+      <article class="serv"><span class="tag">Movimiento de tierras</span><h3>Volteo + equipo</h3><p>Coordinamos retroexcavadora, pala o rodillo con operadores aliados para que tengas todo en un solo contrato.</p></article>
+      <article class="serv"><span class="tag">Contratos</span><h3>Volteo por día o por obra</h3><p>Camión asignado a tu proyecto por jornada, semana o volumen total, con reporte diario de viajes y conduces.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="peligro" aria-hidden="true"></div>
+
+<section id="proceso">
+  <div class="wrap">
+    <div class="cab">
+      <div><span class="eyebrow">Cómo trabajamos</span><h2>De la cotización al conduce</h2></div>
+      <p>Cada viaje sale con su conduce firmado, para que el residente o el dueño lleve el control de lo que entró a la obra.</p>
+    </div>
+    <div class="pasos">
+      <div class="paso"><h3>Cotiza</h3><p>Escríbenos por WhatsApp el material, la cantidad y la ubicación (o envía el pin de Google Maps).</p></div>
+      <div class="paso"><h3>Confirma</h3><p>Te damos precio por viaje o por m³ y la hora de llegada. Los clientes nuevos abonan antes del primer despacho.</p></div>
+      <div class="paso"><h3>Despacho</h3><p>Te avisamos cuando el camión sale de la mina y cuando va llegando, con foto de la carga.</p></div>
+      <div class="paso"><h3>Entrega</h3><p>Descargamos donde indiques, firmas el conduce y recibes tu factura con NCF.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="flota" id="flota">
+  <div class="wrap">
+    <div class="cab">
+      <div><span class="eyebrow">Flota</span><h2>Dos volteos de 19 m³</h2></div>
+      <p>Camiones propios, con choferes con licencia de vehículo pesado, seguro vigente y mantenimiento al día.</p>
+    </div>
+    <div class="flota-grid">
+      <div class="camion">
+        <svg viewBox="0 0 320 120" role="img" aria-label="Silueta de camión volteo, unidad 01">
+          <rect x="0" y="108" width="320" height="2" fill="currentColor" opacity=".25"/>
+          <path d="M20 40 L40 86 H200 L210 40 Z" style="fill:var(--volteo)"/>
+          <rect x="18" y="86" width="270" height="8" fill="currentColor" opacity=".85"/>
+          <path d="M214 50 H262 L286 72 V86 H214 Z" fill="currentColor" opacity=".85"/>
+          <rect x="230" y="56" width="26" height="14" style="fill:var(--banda)"/>
+          <circle cx="60" cy="98" r="11" fill="currentColor"/><circle cx="88" cy="98" r="11" fill="currentColor"/><circle cx="256" cy="98" r="11" fill="currentColor"/>
+          <text x="110" y="70" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" style="fill:var(--volteo-ink)">TF-01</text>
+        </svg>
+        <table class="ficha"><tr><td>Capacidad</td><td>19 m³</td></tr><tr><td>Tipo</td><td>Volteo trasero</td></tr><tr><td>Uso ideal</td><td>Agregados y relleno</td></tr></table>
+      </div>
+      <div class="camion">
+        <svg viewBox="0 0 320 120" role="img" aria-label="Silueta de camión volteo, unidad 02">
+          <rect x="0" y="108" width="320" height="2" fill="currentColor" opacity=".25"/>
+          <path d="M20 40 L40 86 H200 L210 40 Z" style="fill:var(--volteo)"/>
+          <rect x="18" y="86" width="270" height="8" fill="currentColor" opacity=".85"/>
+          <path d="M214 50 H262 L286 72 V86 H214 Z" fill="currentColor" opacity=".85"/>
+          <rect x="230" y="56" width="26" height="14" style="fill:var(--banda)"/>
+          <circle cx="60" cy="98" r="11" fill="currentColor"/><circle cx="88" cy="98" r="11" fill="currentColor"/><circle cx="256" cy="98" r="11" fill="currentColor"/>
+          <text x="110" y="70" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" style="fill:var(--volteo-ink)">TF-02</text>
+        </svg>
+        <table class="ficha"><tr><td>Capacidad</td><td>19 m³</td></tr><tr><td>Tipo</td><td>Volteo trasero</td></tr><tr><td>Uso ideal</td><td>Escombros y excavación</td></tr></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clientes">
+  <div class="wrap">
+    <div class="cab">
+      <div><span class="eyebrow">Para quién</span><h2>Trabajamos con</h2></div>
+    </div>
+    <div class="clientes">
+      <div class="cli"><h3>Constructoras</h3><p>Volteo asignado por obra, con reporte de viajes para la cubicación.</p></div>
+      <div class="cli"><h3>Ingenieros y maestros</h3><p>Material a tiempo para el vaciado, sin tener que salir a buscar camión.</p></div>
+      <div class="cli"><h3>Ferreterías y depósitos</h3><p>Llevamos tus ventas de arena y grava hasta el cliente final.</p></div>
+      <div class="cli"><h3>Dueños de solares</h3><p>Relleno y nivelación para tu casa, nave o parqueo, con precio cerrado.</p></div>
+    </div>
+    <span class="eyebrow" style="display:block;margin-top:40px">Zonas de servicio</span>
+    <div class="zonas">
+      <span>Santo Domingo Este</span><span>Distrito Nacional</span><span>Santo Domingo Norte</span><span>Santo Domingo Oeste</span><span>Boca Chica</span><span>San Cristóbal</span><span>Otras zonas: consúltanos</span>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Contacto</span>
+      <h2>Cotiza tu viaje</h2>
+      <p style="margin-top:12px;color:var(--gris);max-width:44ch">Respondemos en menos de 30 minutos en horario laboral. Envía el pin de la obra y, si puedes, una foto del acceso para saber si entra el camión.</p>
+      <div class="datos">
+        <div><span>WhatsApp y llamadas</span><b>809-000-0000</b></div>
+        <div><span>Correo</span><b>ventas@tierrafirme.com.do</b></div>
+        <div><span>Horario</span><b>Lun–Sáb · 6:00–18:00</b></div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <label for="f-nombre">Nombre o empresa<input id="f-nombre" required value="Ing. Pérez, Residencial Las Palmas"></label>
+      <label for="f-tel">Teléfono<input id="f-tel" inputmode="tel" value="829-555-0142"></label>
+      <label class="full" for="f-material">Material o servicio
+        <select id="f-material"><option>Arena lavada</option><option>Grava / gravilla</option><option selected>Caliche / relleno</option><option>Bote de escombros</option><option>Bote de tierra</option><option>Volteo por día</option></select>
+      </label>
+      <label for="f-cant">Cantidad (viajes o m³)<input id="f-cant" value="6 viajes"></label>
+      <label for="f-fecha">Fecha deseada<input id="f-fecha" type="date"></label>
+      <label class="full" for="f-dir">Ubicación de la obra<input id="f-dir" value="Av. San Vicente de Paúl, Santo Domingo Este"></label>
+      <label class="full" for="f-nota">Detalles<textarea id="f-nota">Solar de 20 x 10 m, hay que subir 60 cm. Acceso por calle asfaltada.</textarea></label>
+      <button class="btn btn-y full" type="submit" style="justify-content:center">Enviar por WhatsApp</button>
+      <p class="nota full" id="f-estado">El botón abre WhatsApp con tu mensaje listo para enviar.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Tierra Firme Transporte SRL · RNC en trámite</span>
+    <span>Volteos de 19 m³ · República Dominicana</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/18090000000?text=Hola%2C%20quiero%20cotizar%20un%20viaje%20de%20volteo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  // Cambia este número por el WhatsApp real de la empresa (formato internacional sin "+").
+  var WA = "18090000000";
+  var CAP = 19, CAMIONES = 2;
+  var $ = function(id){ return document.getElementById(id); };
+  var modo = "medidas";
+
+  function fmt(n, d){ return n.toLocaleString("es-DO",{maximumFractionDigits:d||0}); }
+
+  function calcular(){
+    var sitio;
+    if (modo === "medidas") {
+      sitio = (parseFloat($("largo").value)||0) * (parseFloat($("ancho").value)||0) * (parseFloat($("alto").value)||0);
+    } else {
+      sitio = parseFloat($("m3").value)||0;
+    }
+    var opt = $("material").selectedOptions[0];
+    var factor = parseFloat(opt.value);
+    var suelto = sitio * factor;
+    var viajes = suelto > 0 ? Math.ceil(suelto / CAP) : 0;
+    var rondas = Math.ceil(viajes / CAMIONES);
+    $("r-viajes").textContent = fmt(viajes);
+    $("r-suelto").textContent = fmt(suelto,1) + " m³";
+    $("r-rondas").textContent = fmt(rondas);
+    $("r-nota").textContent = factor > 1
+      ? "Volumen en sitio " + fmt(sitio,1) + " m³ × " + fmt(factor,2) + " por esponjamiento. Es un estimado: lo confirmamos en la visita o por fotos."
+      : "La arena y la grava se venden medidas sueltas, sin factor extra. Es un estimado: lo confirmamos contigo.";
+    var msg = "Hola, quiero cotizar " + viajes + " viaje(s) de volteo de 19 m³. Material: " + opt.dataset.n + ". Volumen estimado: " + fmt(suelto,1) + " m³. Ubicación: ";
+    $("calc-wa").href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+  }
+
+  function setModo(m){
+    modo = m;
+    $("t-medidas").setAttribute("aria-selected", m === "medidas");
+    $("t-m3").setAttribute("aria-selected", m === "m3");
+    $("g-medidas").hidden = m !== "medidas";
+    $("g-m3").hidden = m !== "m3";
+    calcular();
+  }
+  $("t-medidas").addEventListener("click", function(){ setModo("medidas"); });
+  $("t-m3").addEventListener("click", function(){ setModo("m3"); });
+  ["largo","ancho","alto","m3","material"].forEach(function(id){ $(id).addEventListener("input", calcular); });
+  calcular();
+
+  // Fecha de ejemplo: mañana
+  try { var d = new Date(Date.now() + 864e5); $("f-fecha").value = d.toISOString().slice(0,10); } catch(e){}
+
+  $("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    if (!$("f-nombre").value.trim() || !$("f-dir").value.trim()) {
+      $("f-estado").textContent = "Escribe tu nombre y la ubicación de la obra para poder cotizar.";
+      return;
+    }
+    var t = "Hola, soy " + $("f-nombre").value + " (" + $("f-tel").value + ").\n" +
+      "Servicio: " + $("f-material").value + "\nCantidad: " + $("f-cant").value +
+      "\nFecha: " + $("f-fecha").value + "\nUbicación: " + $("f-dir").value + "\n" + $("f-nota").value;
+    var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+    var a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove();
+    $("f-estado").textContent = "Se abrió WhatsApp con tu mensaje. Si no se abrió, escríbenos al 809-000-0000.";
+  });
+})();
+</script>
+</body>
+</html>
