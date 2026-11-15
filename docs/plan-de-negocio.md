@@ -1,36 +1,25 @@
-# Plan de arranque — Empresa de volteos y movimiento de tierras (República Dominicana)
+# Plan de arranque — PLG Volteos y Movimiento de Tierras
 
-Punto de partida: **2 camiones volteo de 19 m³**, posible sociedad con amigos.
+Empresa: **Palacios Logistic Group SRL** (consultoría y transporte). Nueva división: **2 camiones volteo de 19 m³**, con posible sociedad futura para construcción.
 
 > Los datos legales y de trámites son orientativos. Confírmalos con un abogado y un contador dominicanos antes de firmar o registrar nada.
 
 ---
 
-## 1. Nombres comerciales
+## 1. Identidad: Palacios Logistic Group SRL (PLG)
 
-Criterios: fácil de decir por teléfono, que suene a obra y a cumplimiento, que se lea bien rotulado en la puerta de un camión y que pueda crecer (de 2 camiones a flota, y de transporte a movimiento de tierras).
+La empresa ya existe y está registrada como **Palacios Logistic Group SRL** (consultoría y transporte). Los volteos y el movimiento de tierras arrancan como una **división** de PLG, no como empresa nueva (ver sección 5).
 
-| # | Nombre | Por qué funciona |
-|---|--------|------------------|
-| 1 | **Tierra Firme** Transporte SRL | Transmite solidez y cumplimiento. Sirve para volteos y para movimiento de tierras. *(Usado como ejemplo en la web.)* |
-| 2 | **Volteo Seguro** RD | Dice exactamente lo que vendes. Muy buscable en Google y Facebook ("volteo" es la palabra que usa el cliente). |
-| 3 | **Grupo Cimiento** | Suena a empresa grande; deja espacio para crecer a constructora. |
-| 4 | **MueveTierra** Dominicana | Directo, moderno, buen dominio web. |
-| 5 | **Caliche & Arena** Transporte | Usa los materiales que más vas a mover; muy local. |
-| 6 | **Quisqueya Volteos** | Identidad nacional, fácil de recordar. |
-| 7 | **Ruta Firme** Logística de Obra | Pone el foco en la puntualidad. |
-| 8 | **Bloque Duro** Transporte | Coloquial y con fuerza; bueno para redes sociales. |
-| 9 | **Terranova** Movimiento de Tierras | Elegante, sirve para proyectos inmobiliarios y turísticos. |
-| 10 | **Doble Eje** Volteos | Término del oficio; recuerda que son camiones pesados. |
-| 11 | **Agregados Express** RD | Si te enfocas en entregar arena/grava rápido a ferreterías y obras. |
-| 12 | **TransObra** Caribe | Corto, sirve si luego trabajas fuera de la zona metropolitana. |
+| Dónde | Cómo se presenta |
+|---|---|
+| Facturas, contratos, licitaciones | Palacios Logistic Group SRL |
+| Camiones, redes sociales, tarjetas | **PLG Volteos** + "19 m³ · WhatsApp 809-XXX-XXXX" |
+| Google Business / WhatsApp Business | Palacios Logistic Group – Volteos y Movimiento de Tierras |
+| Dominio web | `palacioslogistic.com.do` o `plg.com.do` (verificar en NIC.DO) |
 
-**Mis 3 favoritos:** Tierra Firme, Volteo Seguro y Grupo Cimiento.
+**Lema fijo junto al nombre:** *Volteos y Movimiento de Tierras*. "Logistic" por sí solo hace pensar en almacenes o mensajería; el lema le dice al cliente de construcción qué haces.
 
-Antes de enamorarse de uno:
-1. Búsqueda de disponibilidad en **ONAPI** (Oficina Nacional de la Propiedad Industrial) y registro del nombre comercial.
-2. Revisar que el dominio `.com.do` (NIC.DO) o `.com` y los usuarios de Instagram/Facebook estén libres.
-3. Probarlo por teléfono: "Buenas, Tierra Firme" — si hay que deletrearlo, descártalo.
+Pendiente: revisar con el abogado que el **objeto social** de PLG incluya movimiento de tierras, alquiler de equipos y construcción; si no, ampliarlo por asamblea y registrarlo en la Cámara de Comercio.
 
 ---
 
@@ -50,7 +39,7 @@ Archivo listo: [`web/index.html`](../web/index.html) — una sola página, sin d
 
 **Antes de publicarla, cambiar:**
 - El número `18090000000` en el script y los enlaces `wa.me` por el WhatsApp real.
-- Nombre, correo, zonas y textos de ejemplo del formulario.
+- RNC real en el pie de página, correo, zonas y textos de ejemplo del formulario.
 - Agregar fotos reales de los camiones cargando y descargando (son lo que más vende).
 
 **Publicación (costo casi cero)**
@@ -124,7 +113,7 @@ Archivo listo: [`web/index.html`](../web/index.html) — una sola página, sin d
 
 | Semana | Acciones |
 |---|---|
-| **1–2** | Elegir nombre y verificar en ONAPI. Firmar acuerdo de socios. Constituir la empresa. Abrir cuenta bancaria empresarial. Contratar o confirmar choferes. Revisar seguro, marbete, licencias, mantenimiento. |
+| **1–2** | Ampliar objeto social de PLG si hace falta. Centro de costos de volteos en la contabilidad. Contratar o confirmar choferes. Revisar seguro, marbete, licencias, mantenimiento. |
 | **3–4** | Rotular camiones. WhatsApp Business, Google Business Profile, Instagram/Facebook. Publicar la web. Imprimir tarjetas y conduces numerados. Lista de 50 prospectos (obras, ferreterías, retro, minas). |
 | **5–8** | Ruta de obras 2 veces por semana. Visitar 20 ferreterías/depósitos. Cerrar 2 alianzas con operadores de retro. Lanzar programa de referidos. Primeras reseñas en Google. |
 | **9–12** | Medir indicadores. Ajustar precios por zona. Buscar 1 contrato por obra (camión asignado). Evaluar anuncios pagados. Preparar documentación para Registro de Proveedores del Estado. |
@@ -133,36 +122,44 @@ Meta al día 90: los dos camiones con **al menos 20 días trabajados al mes** y 
 
 ---
 
-## 5. La sociedad con amigos
+## 5. Estructura de empresas y socios
 
-### 5.1 Forma jurídica
-- **SRL (Sociedad de Responsabilidad Limitada)**, Ley 479-08 de Sociedades Comerciales: la más usada para pymes. Mínimo 2 socios; cada socio responde solo hasta su aporte. Verificar con el abogado el capital social mínimo vigente.
-- Si al final vas solo: **EIRL** (Empresa Individual de Responsabilidad Limitada), para separar tu patrimonio personal del negocio.
+### 5.1 Fase 1 — ahora: todo dentro de PLG
+- Los dos volteos operan bajo Palacios Logistic Group SRL.
+- Se aprovecha el historial de PLG (RNC, antigüedad, estados financieros) para constructoras, minas y el Registro de Proveedores del Estado.
+- Una sola contabilidad, una sola declaración en la DGII y una sola TSS.
+- Llevar los volteos como **centro de costos separado** en la contabilidad, para saber si la división gana dinero por sí sola.
 
-**Trámites típicos:** nombre comercial en ONAPI → estatutos y constitución → registro mercantil en la Cámara de Comercio y Producción de tu provincia → RNC en la DGII → registro de empleadores en la TSS (choferes en nómina) → cuenta bancaria → licencias de vehículo pesado de los choferes, seguro de ley y marbete al día en el INTRANT/DGII.
+### 5.2 Fase 2 — nueva SRL cuando entren socios o empiecen contratos de construcción
+```
+Palacios Logistic Group SRL (tuya)
+  ├─ Dueña de camiones y equipos
+  ├─ Consultoría y transporte
+  └─ Alquila camiones y equipos ──►  PLG Construcciones SRL (nueva)
+                                       Socios: tú y/o PLG + amigos
+                                       Contratos de obra y movimiento de tierras
+```
+- Los socios entran **solo en la nueva empresa**, nunca en PLG.
+- Los equipos quedan en PLG: si la constructora enfrenta un reclamo, los camiones no son de ella.
+- El alquiler entre ambas empresas va por contrato escrito y a precio de mercado (la DGII revisa operaciones entre relacionadas).
 
-### 5.2 Acuerdo de socios (por escrito, antes de mover un solo viaje)
-1. **Aportes**: quién pone qué. Si un socio aporta un camión, hay que tasarlo y decidir si pasa a nombre de la empresa (recomendado) o si la empresa se lo alquila.
-2. **Porcentajes** de participación según el valor de los aportes.
-3. **Roles y sueldos**: quien trabaje a diario (ventas, despacho, cobros) cobra un sueldo aparte de las utilidades. Separar "socio inversionista" de "socio operador".
-4. **Reparto de utilidades**: primero un **fondo de mantenimiento y reposición** (por ejemplo un % fijo de lo facturado), después reparto.
-5. **Decisiones**: qué se decide por mayoría y qué requiere unanimidad (comprar o vender camiones, endeudarse, entrar socios nuevos).
-6. **Salida de un socio**: derecho de preferencia de los demás para comprar sus cuotas, fórmula de valoración y plazo de pago.
-7. **Desempate** cuando hay 50/50: mediador o un tercer voto acordado.
-8. **Prohibiciones**: no usar los camiones para trabajos personales, no competir con la empresa.
-9. **Fallecimiento o incapacidad** de un socio.
-10. **Reportes**: estado de cuenta mensual a todos los socios, cuenta bancaria con doble firma para montos grandes.
-
-### 5.3 Reglas de convivencia
-- Todo el dinero pasa por la cuenta de la empresa; nada en efectivo "por fuera".
-- Reunión mensual con números: viajes, ingresos, gastos, cuentas por cobrar.
-- Un solo responsable de despacho y uno de cobros, para que los clientes no reciban precios distintos.
+### 5.3 Acuerdo de socios de la nueva SRL (por escrito, antes de operar)
+1. **Aportes** y su valoración (efectivo, equipos, clientes).
+2. **Porcentajes** de participación.
+3. **Roles y sueldos**: el socio que opera a diario cobra sueldo aparte de las utilidades.
+4. **Utilidades**: primero un fondo de mantenimiento y reposición, después reparto.
+5. **Decisiones** por mayoría vs. unanimidad (comprar equipos, endeudarse, socios nuevos).
+6. **Salida de un socio**: derecho de preferencia, fórmula de valoración y plazo de pago.
+7. **Desempate** en sociedades 50/50.
+8. **No competencia** y prohibición de uso personal de los equipos.
+9. **Uso del nombre y la marca PLG**: pertenece a Palacios Logistic Group; la nueva empresa la usa con licencia y la pierde si tú sales.
+10. **Fallecimiento o incapacidad** de un socio; reportes mensuales y doble firma bancaria.
 
 ---
 
 ## 6. Próximos pasos inmediatos
-1. Elegir 3 nombres y verificar disponibilidad en ONAPI.
-2. Reunión con los socios para definir aportes y roles, con este documento como guía.
-3. Cita con abogado (constitución + acuerdo de socios) y contador (RNC, NCF, nómina).
+1. Abogado: confirmar o ampliar el objeto social de PLG (movimiento de tierras, alquiler de equipos, construcción).
+2. Contador: abrir centro de costos de la división de volteos; NCF y nómina de choferes.
+3. Registrar el dominio y crear los perfiles de PLG Volteos (Google, WhatsApp Business, Instagram, Facebook).
 4. Llamar a 5–8 competidores para conocer precios.
 5. Reemplazar datos de ejemplo en la web y publicarla.
